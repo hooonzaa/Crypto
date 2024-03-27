@@ -9,123 +9,114 @@
     <script src="script.JS"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-e0s8f/p4sf5VwZ5taR0I5aZ6K5p0H+nfe+7yyR54PfF3lGdaPnpIe+ukxN8u+5J0"
-    crossorigin="anonymous">
-</head>
+</head> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <body>
-    <div class="background">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Coins
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">All categories </a></li>
-                                <li><a class="dropdown-item" href="#">Showroom</a></li>
-                                <li><a class="dropdown-item" href="#">Top gainers</a></li>
-                                <li><a class="dropdown-item" href="#">Top losers</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                NFT
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                                <li><a class="dropdown-item" href="#">NFT collection</a></li>
-                                <li><a class="dropdown-item" href="#">NFT whale watch</a></li>
-                                <li><a class="dropdown-item" href="#">Buy NFT</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                               DeFi
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
-                                <li><a class="dropdown-item" href="#">Yield farming</a></li>
-                               
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btn btn-primary" onclick="Login()">Login</button>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+  <script src="script.js"></script>
+<div class="background">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Store</a>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="tričko.html">T-shirt</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="jumper.html">Jumpers</a>
+        <li class="nav-item">
+            <div class="jojo">
+                <body id="body">
+                  <button onclick="DarkMode()"> Dark Mode</button>
+                </div>
+          </li>
+      </li>
+      <li class="nav-item">
+        <button class="btn btn-primary" onclick="Login()">Login</button> 
+      </li>
+    </ul>
+  </div>
+</nav>
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://st.depositphotos.com/2103661/2219/i/450/depositphotos_22198091-stock-photo-rainbow-colors-clothes-on-wooden.jpg" class="d-block w-100" alt=auto>
     </div>
-    <header class="bg-dark text-white py-3">
-        <div class="container">
-            <h1 class="text-center">CryptoCurrency</h1>
-        </div>
-    </header>
-    <input type="text" id="inputKryptomena" onkeyup="hledatKryptomenu()" placeholder="Search for cryptocurrencies...">
-    <br><br>
-
-    <table id="cryptoTable">
-        <tr>
-            <th>Krypto</th>
-            <th>Price</th>
-            <th>24h change</th>
-        </tr>
-        <tr>
-            <td>Bitcoin</td>
-            <td>$70 703,03 USD</td>
-            <td>+5,64%</td>
-        </tr>
-        <tr>
-            <td>Ethereum</td>
-            <td>$3 631,07 USD </td>
-            <td>+5,62%</td>
-        </tr>
-        <tr>
-            <td>Litecoin</td>
-            <td>$91,18 USD</td>
-            <td>-0,40%</td>
-        </tr>
-        <tr>
-            <td>Tether</td>
-            <td>$1,00 USD</td>
-            <td>-0,11%</td>
-        </tr>
-        <tr>
-            <td>Avalanche</td>
-            <td>$57,74 USD</td>
-            <td>+0,73%</td>
-        </tr>
-    </table>
+    <div class="carousel-item">
+      <img src="https://img.freepik.com/free-vector/summer-clothes-set_74855-446.jpg"class="d-block w-100" alt=auto>
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.vedantu.com/seo/content-images/2aa31339-1179-4829-ab45-1555c4092e3d.png" class="d-block w-100" alt=auto>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
-
-    <footer class="bg-dark text-white py-3">
-        <div class="noha">
-            <p></p>
-        </div>
-    </footer>
+<div class="Michal">
+  <div class="card" style="width: 18rem;">
+      <img src="https://cdn.myshoptet.com/usr/www.fotbaldresy.cz/user/shop/big/881-2_mk-foto-fortnite-1.jpg?618fb344" class="card-img-top" width="10rem">
+      <div class="card-body">
+        <h5 class="card-title">Mikina Fortnite</h5>
+        <p class="card-text">Buy for 1000€</p>
+        <a href="..." class="btn btn-primary">Buy</a>
+        <span class="fa fa-star "></span>
+        <span class="fa fa-star "></span>
+        <span class="fa fa-star "></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+      </div>                   
 
   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-eJy7lO3ks2n5T6wZy4Xf2+sVpFM94F3pCyF4y4yIbOOlK9lWd7R0bEZtSJn0K5P3"
-        crossorigin="anonymous"></script>
-</body>
-
-</html>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-eJy7lO3ks2n5T6wZy4Xf2+sVpFM94F3pCyF4y4yIbOOlK9lWd7R0bEZtSJn0K5P3"
-        crossorigin="anonymous"></script>
-
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQigOpBF9tYn0tUNwGytxPRy30o5rze4ZxvhaA1r2t36A&s" class="card-img-top" width="10rem" >
+      <div class="card-body">
+        <h5 class="card-title">Tričko Čau</h5>
+        <p class="card-text">Buy for 200€</p>
+        <a href="..." class="btn btn-primary">Buy</a>
+        <span class="fa fa-star "></span>
+        <span class="fa fa-star "></span>
+        <span class="fa fa-star!" ></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="https://i00.eu/img/422/1024x1024/en5e56jh/74918.jpg" class="card-img-top" width="10rem">
+      <div class="card-body">
+        <h5 class="card-title">Tričko</h5>
+        <p class="card-text">Buy for 100€</p>
+        <a href="..." class="btn btn-primary">Buy</a>
+        <span class="fa fa-star "></span>
+        <span class="fa fa-star "></span>
+        <span class="fa fa-star "></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+      </div>
+    </div>
+  </div>
+  <br>
+  <textarea  id="fazber" placeholder="feedback" name="notes" rows="3" cols="40"></textarea>  <div class="but"><button onclick="send()">Send</button>
+</div>
+    <footer>
+  <div class="michal">
+<h1>CONTACT</h1><br>
+<p>+420 736-718-047</p><br>
+<a href="https://www.instagram.com/michal_3011/"><img
+  src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"
+  height="30px" width="auto"></a></p></div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</div>
 </body>
 </html>
